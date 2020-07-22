@@ -1,0 +1,538 @@
+<!doctype html>
+
+<html dir="ltr" class="no-js">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="title" content="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="url" content="www.1tabmatao.com.br/" />
+<meta name="description" content="Site do 1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="keywords" content="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="autor" content="FASTOL" />
+<meta name="company" content="FASTOL" />
+    <meta name="autor" content="FASTOL" />
+    <meta name="company" content="FASTOL" />
+    <meta name="revisit-after" content="1" />
+
+    <link rev="made" href="mailto:fastol@gmail.com" />
+    <link rel="icon" type="image/png" href="ico.png" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, text-size=normal">
+
+    <!-- CSS Tema -->
+    <link rel='stylesheet' href='layout_v2/css/rt-css-framework.css' type='text/css' media='all' /> <!-- css framework -->
+    <link rel='stylesheet' href='layout_v2/css/style605a.css?_1566453297' type='text/css' media='all' /> <!-- main css -->
+    <link rel='stylesheet' href='layout_v2/css/fontface.css' type='text/css' media='all' /> <!-- font css -->
+    <link rel='stylesheet' href='layout_v2/css/prettyPhoto.css' type='text/css' media='screen' /> <!-- prettyPhoto -->
+    <link rel='stylesheet' href='layout_v2/css/colortip-1.0-jquery.css' type='text/css' media='all' /><!-- color tips -->
+    <link rel='stylesheet' href='layout_v2/css/jcarousel.css' type='text/css' media='all' /> <!-- jquery carousel -->
+    <link rel='stylesheet' href='layout_v2/css/flexslider.css' type='text/css' media='all' /><!-- flex slider -->  
+    <link rel='stylesheet' href='layout_v2/css/nivo-slider.css' type='text/css' media='all' /><!-- nivo slider -->
+    <link rel='stylesheet' href='layout_v2/css/nivo-default/default.css' type='text/css' media='all' /> <!-- nivo slider defaults --> 
+    <link rel='stylesheet' href='layout_v2/css/blue-style605a.css?_1566453297' type='text/css' media='all' /><!-- color file -->
+
+    <!--[if IE 7]>
+    <link rel='stylesheet' id='theme-ie7-css'  href='layout_v2/css/ie7.css' type='text/css' media='screen' />
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <link rel='stylesheet' id='theme-ie8-css'  href='layout_v2/css/ie8.css' type='text/css' media='screen' />
+    <![endif]-->
+
+    <!-- CSS FASTOL -->
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/css.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/jquery/themes/base/ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/colorbox.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery Google -->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <!-- Javascript Tema -->
+    <!--<script type='text/javascript' src='layout_v2/js/jquery-1.9.1.min.js'></script> jquery-->
+    <script type='text/javascript' src='layout_v2/js/jquery.easing.1.3.js'></script> <!-- jquery easing -->
+    <script type='text/javascript' src='layout_v2/js/jquery.tools.min.js'></script> <!-- jquery tools -->
+    <script type='text/javascript' src='layout_v2/js/jquery.prettyPhoto.js'></script> <!-- prettyPhoto -->
+    <script type='text/javascript' src='layout_v2/js/colortip-1.0-jquery.js'></script> <!-- color tips -->
+    <script type='text/javascript' src='layout_v2/js/jquery.validate.js'></script> <!-- jquery form validation -->
+    <script type='text/javascript' src='layout_v2/js/jquery.form.js'></script> <!-- jquery form -->
+    <!--script type='text/javascript' src='layout_v2/js/jflickrfeed.min.js'></script--> <!-- flickr -->
+    <script type='text/javascript' src='layout_v2/js/jquery.flexslider.js'></script> <!-- flex slider -->
+    <script type='text/javascript' src='layout_v2/js/jquery.imgpreload.min.js'></script> <!-- jquery image preloading -->
+    <script type='text/javascript' src='layout_v2/js/jquery.fullbg.min.js'></script> <!-- full background -->
+    <script type='text/javascript' src='layout_v2/js/jquery.jcarousel.min.js'></script> <!-- jquery carousel -->
+    <script type='text/javascript' src='layout_v2/js/jquery.nivo.slider.pack.js'></script> <!-- nivo slider -->
+    <script type='text/javascript' src='layout_v2/js/jquery.jplayer.min.js'></script> <!-- jplayer -->
+
+    <!-- Javascript FASTOL -->
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/ui/ui.core.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/jquery.meiomask.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/ui/ui.datepicker.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/jquery.colorbox.js" ></script>
+
+    <script type="text/javascript">
+        function AbreJanela(Obj, Url, Largura, Altura, Scroll, Titulo){
+            jQuery.noConflict()(function($){
+                $(Obj).colorbox({
+                                  href: Url,
+                                  iframe: true,
+                                  innerWidth:Largura,
+                                  innerHeight:Altura,
+                                  scrolling:Scroll,
+                                  opacity:"0.8",
+                                  title:Titulo
+                })
+            });
+        }
+
+        function validabusca(){
+            obj = $('input[name=query]');
+            if( $(obj).val() == '' || $(obj).val() == 'Digite aqui o que você procura...' ){
+                alert('Digite algo para a pesquisa!');
+                $(obj).focus();
+                return false;
+            }
+        }
+    </script>
+    
+        <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/Web_trackEvent/Web_trackEvent.js?1566453297"></script>
+
+    <!-- Javascript Google Maps -->
+        <script type="text/javascript" src="https://goo.gl/maps/hwuwkUgKrnfYT5Ma9"></script>
+
+    <title>1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP</title>
+
+    <style type="text/css">
+/* Cores */
+
+/* Geral */
+html,body {
+    color: #333333;
+    /* background-color: #000099 !important; */
+    /* background-repeat: repeat-x !important; */
+}
+
+/* Link */
+a {
+    color: #8EC57D;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* Menu + Submenu */
+#navigation_bar > ul > li > a {
+    color: #8EC57D;
+    background-color: none;
+}
+
+#navigation_bar > ul > li > a:hover, 
+#navigation_bar > ul > li.current-menu-ancestor > a {
+    color: #FFFFFF !important;
+    background-color: #8EC57D;
+}
+
+/* Submenu */
+#navigation ul li a {
+    color: #ffffff;
+    background-color: #8EC57D;
+}
+
+#navigation ul li a:hover {
+    color: #000000;
+    background-color: #8EC57D;
+}
+
+#navigation_bar li.current-menu-ancestor, 
+#navigation_bar li.current-menu-ancestor a {
+    color: #FFFFFF !important;
+}
+
+/* Cor Destaque */
+.icon-holder, .head_text .arrow, .box:hover > .image-border-bottom,
+.flex-caption .desc-background, .flex-direction-nav li, .flex-direction-nav li a,
+.flex-control-nav li a, body .search-bar form input.searchsubmit, .paging li a:hover,
+.paging li a:hover, .paging li.active a, .post-navigations a, a.banner_button, a.banner_button:hover,
+.social_tip, .icon-overlay .icon, .blog_list .date, .rt-toggle ol li .toggle-number, .mobile-date,
+.theme-default .nivo-directionNav a, .theme-default .nivo-caption .desc-background, .theme-default .nivo-controlNav a {
+    background-color: #8EC57D !important;
+}
+
+/* Ajustes */
+select {
+    height:auto !important;
+}
+.modulo input,select,textarea {
+    /*width:auto !important;*/
+    margin:2px;
+}
+.modulo table {
+    border-spacing:0;
+    /*width:98%;*/
+    margin:auto;
+    border:inherit;
+}
+.modulo td {
+    padding:inherit;
+    border:none;
+    /*text-align:inherit;*/
+    margin:0 !important;
+}
+.modulo {
+    overflow:visible !important;
+}
+#menuAdmin ul li {
+    margin:0 !important;
+    z-index:9999;
+}
+#menuAdmin ul li a {
+    color:white !important;
+}
+input[type=image] {
+    background: transparent;
+    margin: 0;
+}
+input, label {
+    display: inline !important;
+    
+}
+
+/* Botão Help */
+#botao-help {
+    font-size:15px !important;
+    font-family:Arial;
+    font-weight:bolder;
+    display:block;
+    margin-top:10px;
+    text-align:center;
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    padding:3px;
+    cursor:pointer !important;
+    background:#e9e9e9;
+    border:#ccc 1px solid; color:#000;
+    padding:0px 10px;
+    box-shadow:0px 0px 2px #ddd;
+    text-shadow:0px 0px 2px #bbb;
+    color:#000099 !important;
+    line-height:200%;
+    margin: 0;
+}
+
+#botao-help:hover {
+    background-color:#eaeaea;
+    box-shadow:0px 0px 5px #ddd;
+    color:#000000 !important;
+}
+
+.logo-background {
+    padding: 0 30px !important;
+}
+
+.logo-holder {
+    border-color: #8EC57D !important;
+}
+
+/*
+#navigation_bar > ul > a {
+    background-color: none !important;
+}
+
+#navigation_bar > ul > a:hover {
+    background-color: none !important;
+}
+*/
+</style>
+</head>
+
+<!-- body starts here -->
+<body class="home responsive">
+
+
+<!--[if lte IE 7]>
+    <script type="text/javascript" src="http://www.webcartorios.com.br/widgets/navegador/verifica.js"></script>
+<![endif]-->
+<style>
+    .noscript { border:1px solid #ddd; border-width:0 0 1px; background:#ffff90; font-size:12px; line-height:1.25; text-align:center; color:#2f2f2f; }
+    .noscript .noscript-inner { width:750px; margin:0 auto; padding:12px 0 12px; background:url(https://www.404.com/) 20px 50% no-repeat; }
+    .noscript p { margin:0; }
+</style>
+
+
+<!-- background wrapper -->
+<div id="container">
+
+    <div class="transparent-line"></div><!-- transparent line -->
+    
+    <!-- content wrapper -->
+    <div class="content-wrapper">       
+
+        <!-- header -->
+
+        <div id="header" class="clearfix">
+
+            <header>            
+
+                <!-- logo -->
+                <div id="logo" class="clearfix">
+                    <div class="shadow-left"></div><!-- shadow left-->
+                    <div class="logo-holder"><!-- logo holder-->
+                        <div class="transparent-line logo"></div><!-- transparent line -->
+                        <div class="logo-background"><!-- logo background-->
+                            <a href="index.html" title="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP"><img src="layout_v2/images/logo06f3.png?1566453297" alt="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" class="png" /></a>
+                            <!--MUDAR LOGO-->
+                        </div>
+                    </div>
+                    <div class="shadow-right"></div><!-- shadow right-->
+                </div>
+                <!-- / end div #logo -->    
+
+                <!-- navigation --> 
+                <nav>
+
+                <div id="navigation_bar" class="navigation"> 
+
+
+
+                    <!-- Standart Menu --> 
+
+                    <ul id="navigation" class="menu"> 
+
+                        <li class="current-menu-ancestor first"><a href="index.html">Início</a></li><!-- active menu item -->
+                          <li><a href="#">Serviços</a>
+                                  <ul class="sub-menu"><li><a href="#">Notas</a>
+                                                   <ul class="sub-menu"><li><a href="abertura_firma.html">Abertura de Firmas</a></li><li><a href="atas.html">Atas Notariais</a></li><li><a href="autenticacao.html">Autenticação de Cópias</a></li><li><a href="sentenca.html">Carta de Sentença</a></li><li><a href="certidoes.html">Certidões</a></li><li><a href="uniaoestavel.html">Declaração de União Estável</a></li><li><a href="declaracoes.html">Declarações</a></li><li><a href="emancipacao.html">Emancipação</a></li><li><a href="escrituras.html">Escrituras</a></li><li><a href="inventarios_separacoes_divorcios.html">Inventários, Separações e Divórcios</a></li><li><a href="antenupcial.html">Pacto Antenupcial</a></li><li><a href="procuracoes.html">Procurações</a></li><li><a href="reconhecimento_filho.html">Reconhecimento de Filho</a></li><li><a href="reconhecimento_firma.html">Reconhecimento de Firma</a></li><li><a href="testamento.html">Testamento</a></li><li><a href="duvidas_notas.html">Modelos/Tire suas dúvidas</a></li></ul></li><li><a href="#">Protesto</a>
+                                                   <ul class="sub-menu"><li><a href="cancelamento.html">Cancelamento de Protesto</a></li><li><a href="formulario_protesto.html">Formulário de Protesto</a></li><li><a href="formulario_cancelamento.html">Modelo de Formulário para Cancelamento de Protesto</a></li><li><a href="certidao_protesto.html">Pedido de Certidão</a></li><li><a href="protesto_titulo.html">Protesto de Títulos</a></li><li><a href="duvidas_protesto.html">Modelos/Tire suas dúvidas</a></li></ul></li><li><a href="noticias.html">Notícias</a></li><li><a href="tabelas_custas.html">Tabelas de Custas e Emolumentos</a></li></ul></li>                       <li><a href="#">O Cartório</a>
+                              <ul>
+                               <li><a href="cartorio.html">Sobre o Cartório</a></li><li><a href="cidade.html">Nossa Cidade</a></li><li><a href="localizacao.html">Mapa de localização</a></li>                              </ul>
+                                </section>
+                        </li>
+                        <li><a href="duvidas.html">Dúvidas?</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+
+
+                    </ul> 
+
+                    <!-- / Standart Menu --> 
+
+
+
+
+
+                    <!-- Mobile Menu -->  
+
+                    <select id="mobile_navigation" class="menu dropdown-menu"> 
+
+                        <option value="#">&#8211; Menu &#8211;</option>
+                        <option value="index.html">Início</option>
+                        
+                          <option value="#"> - Notas</option><option value="abertura_firma.html"> - - Abertura de Firmas</option><option value="atas.html"> - - Atas Notariais</option><option value="autenticacao.html"> - - Autenticação de Cópias</option><option value="sentenca.html"> - - Carta de Sentença</option><option value="certidoes.html"> - - Certidões</option><option value="uniaoestavel.html"> - - Declaração de União Estável</option><option value="declaracoes.html"> - - Declarações</option><option value="emancipacao.html"> - - Emancipação</option><option value="escrituras.html"> - - Escrituras</option><option value="inventarios_separacoes_divorcios.html"> - - Inventários, Separações e Divórcios</option><option value="antenupcial.html"> - - Pacto Antenupcial</option><option value="procuracoes.html"> - - Procurações</option><option value="reconhecimento_filho.html"> - - Reconhecimento de Filho</option><option value="reconhecimento_firma.html"> - - Reconhecimento de Firma</option><option value="testamento.html"> - - Testamento</option><option value="duvidas_notas.html"> - - Modelos/Tire suas dúvidas</option><option value="#"> - Protesto</option><option value="cancelamento.html"> - - Cancelamento de Protesto</option><option value="formulario_protesto.html"> - - Formulário de Protesto</option><option value="formulario_cancelamento.html"> - - Modelo de Formulário para Cancelamento de Protesto</option><option value="certidao_protesto.html"> - - Pedido de Certidão</option><option value="protesto_titulo.html"> - - Protesto de Títulos</option><option value="duvidas_protesto.html"> - - Modelos/Tire suas dúvidas</option><option value="#"> - Serviços</option><option value="noticias.html"> - - Notícias</option><option value="tabelas_custas.html"> - - Tabelas de Custas e Emolumentos</option>                        <option value="#"> - O Cartório</option>
+                        
+                       <option value="cartorio.html"> - - Sobre o Cartório</option><option value="cidade.html"> - - Nossa Cidade</option><option value="localizacao.html"> - - Mapa de localização</option>                        
+                        <option value="links.html"> - Links</option>
+                        <option value="contato.html"> - Contato</option>
+                    </select> 
+
+                    <!-- / Mobile Menu -->     
+
+
+
+                </div>
+
+                </nav>
+
+                <!-- / navigation  -->
+
+                
+
+            </header>
+
+        </div><!-- end div #header -->
+
+        
+
+    </div><!-- / end div content-wrapper -->
+
+    
+
+    <!-- main container -->
+
+    <div id="main" role="main" class="clearfix">
+
+    
+
+        <!-- fullwidth -->
+
+        <div class="sub_page fullwidth">
+
+        
+
+        	<!-- content holder -->
+
+        	<div class="content fullwidth clearfix">
+
+            
+            
+            	<div class="space margin-b30"></div>
+	  <div class="box one box-shadow">
+		
+		<!-- page title -->
+		<div class="head_text nomargin">
+			<div class="arrow"></div><!-- arrow -->
+			<h2>Reconhecimento de Firma</h2>	</div>
+		<!-- /page title -->
+	</div><div class="space margin-b30"></div><div class="modulo box one box-shadow"><table border="0" align="center" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><div style="padding: 14px;"><span style="font-size:small"><strong>T&oacute;picos Relacionados:</strong></span><br />
+<span style="font-size:small">- <a href="indexbb2f.html?pG=X19wYWdpbmFz&amp;idPagina=103" target="_blank">Abertura de Firmas</a></span><br />
+<span style="font-size:small">- <a href="index5953.html?pG=X19wYWdpbmFz&amp;idPagina=7" target="_blank">Autentica&ccedil;&atilde;o de C&oacute;pias</a></span><br />
+<br />
+<span style="font-size:small"><strong>O que &eacute;?</strong></span><br />
+<br />
+<span style="font-size:small">Firma &eacute; assinatura.</span><br />
+<br />
+<span style="font-size:small">O reconhecimento de firma &eacute; o ato pelo qual o Tabeli&atilde;o, que tem f&eacute; p&uacute;blica, atesta que a assinatura constante de um documento corresponde &agrave;quela da pessoa que a lan&ccedil;ou.&nbsp;</span><br />
+<br />
+<span style="font-size:small">Ou seja, &eacute; uma declara&ccedil;&atilde;o pela qual o tabeli&atilde;o confirma a autenticidade ou semelhan&ccedil;a da assinatura de determinada pessoa em um documento. N&atilde;o se refere ao teor do documento, mas t&atilde;o somente &agrave; autenticidade da assinatura.</span><br />
+<br />
+<span style="font-size:small">As modalidades de reconhecimento de firma s&atilde;o: reconhecimento de firma por autenticidade e reconhecimento de firma por semelhan&ccedil;a. Em ambos os casos dever&aacute; ser aberto um cart&atilde;o de assinaturas/ficha de firma (ver <a href="indexbb2f.html?pG=X19wYWdpbmFz&amp;idPagina=103" target="_blank">Abertura de Firmas</a>).</span><br />
+<br />
+<span style="font-size:small">O que determina a modalidade de reconhecimento a ser praticada &eacute; eventual exig&ecirc;ncia legal ou do destinat&aacute;rio do documento.&nbsp;</span><br />
+<br />
+<br />
+<span style="font-size:small">- <strong>Reconhecimento de firma por autenticidade</strong></span><br />
+<br />
+<br />
+<span style="font-size:small">Ato de reconhecimento de assinatura em que o usu&aacute;rio comprova, pessoalmente, que &eacute; signat&aacute;rio do documento apresentado para o reconhecimento de firma.&nbsp;</span><br />
+<br />
+<span style="font-size:small">O usu&aacute;rio deve assinar, diante do Tabeli&atilde;o, o documento que pretende ter a firma reconhecida como aut&ecirc;ntica. Caso o documento j&aacute; esteja assinado, ser&aacute; exigida nova assinatura no documento.</span><br />
+<br />
+<span style="font-size:small">No momento do comparecimento dever&aacute; o comparecente assinar, al&eacute;m do documento, um termo em livro pr&oacute;prio do cart&oacute;rio. Esse termo &eacute; a prova da aposi&ccedil;&atilde;o da assinatura perante o agente dotado de f&eacute; p&uacute;blica.</span><br />
+<br />
+<br />
+<span style="font-size:small">- <strong>Reconhecimento de Firma por semelhan&ccedil;a</strong></span><br />
+<br />
+<br />
+<span style="font-size:small">O reconhecimento de assinatura &eacute; realizado por semelhan&ccedil;a quando o tabelionato certifica que a assinatura aposta no documento confere com a assinatura depositada em seu banco de dados. Ou seja, o reconhecimento foi feito por meio da compara&ccedil;&atilde;o da assinatura constante no documento com a assinatura depositada na ficha padr&atilde;o do usu&aacute;rio, n&atilde;o sendo necess&aacute;rio o seu comparecimento pessoal para o ato de reconhecimento de firma.&nbsp;</span><br />
+<br />
+<span style="font-size:small">O reconhecimento de firma por semelhan&ccedil;a pode ser com valor econ&ocirc;mico ou sem valor econ&ocirc;mico, de acordo com o conte&uacute;do ou natureza do documento.</span><br />
+<br />
+<br />
+<span style="font-size:small"><strong>O que &eacute; necess&aacute;rio?</strong></span><br />
+<br />
+<span style="font-size:small">Para que o reconhecimento de firma possa ser feito, &eacute; necess&aacute;rio que a pessoa que assinou o documento tenha &quot;ficha de firma&quot; no Tabelionato de Notas, o que &eacute; feito atrav&eacute;s da abertura de firma.</span><br />
+<br />
+<span style="font-size:small">&Eacute; importante que o portador do documento saiba o nome completo de quem assinou. Se o nome estiver incompleto ou errado, ou ainda se for um nome muito repetido, como Jos&eacute; da Silva, &eacute; necess&aacute;rio o n&uacute;mero do RG ou do CPF da pessoa, caso estes dados n&atilde;o constem no documento, para que a busca no sistema possa ser feita com sucesso, e sua ficha localizada.</span><br />
+<br />
+<span style="font-size:small">Para que o reconhecimento de firma seja feito, a assinatura do documento deve ser semelhante &agrave;quela da ficha de firma. A ficha de firma n&atilde;o tem prazo de validade, mas as pessoas mudam sua assinatura com o passar dos anos.</span><br />
+<br />
+<span style="font-size:small">Nestes casos, &eacute; preciso que a pessoa compare&ccedil;a novamente ao tabelionato, para renovar sua ficha de firma.</span><br />
+<br />
+<span style="font-size:small"><em><strong>Importante:</strong></em> &Eacute; vedado o reconhecimento de firma em documentos sem data, com espa&ccedil;os em branco ou incompletos.&nbsp;</span><br />
+<br />
+<span style="font-size:small">Por isso, antes de comparecer ao Cart&oacute;rio, certifique-se de que todos os dados constantes no documento est&atilde;o preenchidos e que o mesmo n&atilde;o foi p&oacute;s-datado.</span><br />
+<br />
+<span style="font-size:small"><strong>Quanto custa?</strong></span><br />
+<br />
+<span style="font-size:small">O valor é tabelado por lei em todos os cartórios deste Estado de acordo com a tabela: <a href="index5c61.html?pG=X190YWJlbGFz" target="_blank">(tabela de custas e emolumentos)</a>.</span></div><div style="background: #f1f1f1; margin: 3px; padding: 10px; border: 1px solid #dddddd; color:"><font class="titulo_item"><div style="float: left"><a href="index.html">Voltar</a></div><BR></font></div></td></tr></table></div><!--/ .modulo-->
+ 
+
+                <!-- space -->
+
+                <div class="space margin-b30"></div>
+
+
+
+
+
+    
+
+        	</div><!-- / end div .content holder -->
+
+        </div><!-- / end div .fullwidth -->
+
+    
+
+    </div><!-- / end div #main -->
+
+
+	
+
+    <!-- footer -->
+
+    <div class="transparent-line footer"></div><!-- transparent line -->
+
+    <div id="footer" class="box-shadow clearfix"><footer>
+
+     
+
+        <!-- footer info -->
+
+        <div class="footer_info">       
+
+                
+
+            <!-- left side -->
+
+            <div class="part1">
+
+
+
+                <!-- footer nav -->
+
+                
+
+
+
+                <!-- copyright text -->
+
+                <div class="copyright">
+
+                    &copy; 2020 Todos os direitos reservados
+
+                </div><!-- / end div .copyright -->             
+
+                
+
+            </div><!-- / end div .part1 -->
+
+                        
+        </div><!-- / end div .footer_info -->
+
+            
+
+    </footer></div><!--! end of div #footer --> 
+
+    <!-- / footer -->
+
+
+
+</div><!-- end div #container -->
+
+
+
+<!-- footer scripts -->
+
+<script type='text/javascript' src='layout_v2/js/script06f3.js?1566453297'></script> <!-- various scripts -->
+
+<!-- / footer scripts -->
+
+<script type="text/javascript">
+$ = jQuery;
+
+// Inicia as Máscaras
+$(function() {
+    $.mask.masks.letras = {mask: 'i', type:'repeat'};
+    $.mask.masks.numeros = {mask: '9', type:'repeat'};
+    $('input:text').setMask();
+    $('.data').datepicker();
+});
+</script>
+</body>
+
+
+</html>

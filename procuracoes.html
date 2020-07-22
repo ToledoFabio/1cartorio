@@ -1,0 +1,498 @@
+<!doctype html>
+
+<html dir="ltr" class="no-js">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="title" content="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="url" content="www.1tabmatao.com.br/" />
+<meta name="description" content="Site do 1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="keywords" content="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" />
+<meta name="autor" content="FASTOL" />
+<meta name="company" content="FASTOL" />
+    <meta name="autor" content="FASTOL" />
+    <meta name="company" content="FASTOL" />
+    <meta name="revisit-after" content="1" />
+
+    <link rev="made" href="mailto:fastol@gmail.com" />
+    <link rel="icon" type="image/png" href="ico.png" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, text-size=normal">
+
+    <!-- CSS Tema -->
+    <link rel='stylesheet' href='layout_v2/css/rt-css-framework.css' type='text/css' media='all' /> <!-- css framework -->
+    <link rel='stylesheet' href='layout_v2/css/style605a.css?_1566453297' type='text/css' media='all' /> <!-- main css -->
+    <link rel='stylesheet' href='layout_v2/css/fontface.css' type='text/css' media='all' /> <!-- font css -->
+    <link rel='stylesheet' href='layout_v2/css/prettyPhoto.css' type='text/css' media='screen' /> <!-- prettyPhoto -->
+    <link rel='stylesheet' href='layout_v2/css/colortip-1.0-jquery.css' type='text/css' media='all' /><!-- color tips -->
+    <link rel='stylesheet' href='layout_v2/css/jcarousel.css' type='text/css' media='all' /> <!-- jquery carousel -->
+    <link rel='stylesheet' href='layout_v2/css/flexslider.css' type='text/css' media='all' /><!-- flex slider -->  
+    <link rel='stylesheet' href='layout_v2/css/nivo-slider.css' type='text/css' media='all' /><!-- nivo slider -->
+    <link rel='stylesheet' href='layout_v2/css/nivo-default/default.css' type='text/css' media='all' /> <!-- nivo slider defaults --> 
+    <link rel='stylesheet' href='layout_v2/css/blue-style605a.css?_1566453297' type='text/css' media='all' /><!-- color file -->
+
+    <!--[if IE 7]>
+    <link rel='stylesheet' id='theme-ie7-css'  href='layout_v2/css/ie7.css' type='text/css' media='screen' />
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <link rel='stylesheet' id='theme-ie8-css'  href='layout_v2/css/ie8.css' type='text/css' media='screen' />
+    <![endif]-->
+
+    <!-- CSS FASTOL -->
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/css.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/jquery/themes/base/ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.cartoriodesantaisabel.com.br/__inc/colorbox.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery Google -->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <!-- Javascript Tema -->
+    <!--<script type='text/javascript' src='layout_v2/js/jquery-1.9.1.min.js'></script> jquery-->
+    <script type='text/javascript' src='layout_v2/js/jquery.easing.1.3.js'></script> <!-- jquery easing -->
+    <script type='text/javascript' src='layout_v2/js/jquery.tools.min.js'></script> <!-- jquery tools -->
+    <script type='text/javascript' src='layout_v2/js/jquery.prettyPhoto.js'></script> <!-- prettyPhoto -->
+    <script type='text/javascript' src='layout_v2/js/colortip-1.0-jquery.js'></script> <!-- color tips -->
+    <script type='text/javascript' src='layout_v2/js/jquery.validate.js'></script> <!-- jquery form validation -->
+    <script type='text/javascript' src='layout_v2/js/jquery.form.js'></script> <!-- jquery form -->
+    <!--script type='text/javascript' src='layout_v2/js/jflickrfeed.min.js'></script--> <!-- flickr -->
+    <script type='text/javascript' src='layout_v2/js/jquery.flexslider.js'></script> <!-- flex slider -->
+    <script type='text/javascript' src='layout_v2/js/jquery.imgpreload.min.js'></script> <!-- jquery image preloading -->
+    <script type='text/javascript' src='layout_v2/js/jquery.fullbg.min.js'></script> <!-- full background -->
+    <script type='text/javascript' src='layout_v2/js/jquery.jcarousel.min.js'></script> <!-- jquery carousel -->
+    <script type='text/javascript' src='layout_v2/js/jquery.nivo.slider.pack.js'></script> <!-- nivo slider -->
+    <script type='text/javascript' src='layout_v2/js/jquery.jplayer.min.js'></script> <!-- jplayer -->
+
+    <!-- Javascript FASTOL -->
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/ui/ui.core.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/jquery.meiomask.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/ui/ui.datepicker.js"></script>
+    <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/jquery/jquery.colorbox.js" ></script>
+
+    <script type="text/javascript">
+        function AbreJanela(Obj, Url, Largura, Altura, Scroll, Titulo){
+            jQuery.noConflict()(function($){
+                $(Obj).colorbox({
+                                  href: Url,
+                                  iframe: true,
+                                  innerWidth:Largura,
+                                  innerHeight:Altura,
+                                  scrolling:Scroll,
+                                  opacity:"0.8",
+                                  title:Titulo
+                })
+            });
+        }
+
+        function validabusca(){
+            obj = $('input[name=query]');
+            if( $(obj).val() == '' || $(obj).val() == 'Digite aqui o que você procura...' ){
+                alert('Digite algo para a pesquisa!');
+                $(obj).focus();
+                return false;
+            }
+        }
+    </script>
+    
+        <script type="text/javascript" src="http://www.cartoriodesantaisabel.com.br/__inc/Web_trackEvent/Web_trackEvent.js?1566453297"></script>
+
+    <!-- Javascript Google Maps -->
+        <script type="text/javascript" src="https://goo.gl/maps/hwuwkUgKrnfYT5Ma9"></script>
+
+    <title>1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP</title>
+
+    <style type="text/css">
+/* Cores */
+
+/* Geral */
+html,body {
+    color: #333333;
+    /* background-color: #000099 !important; */
+    /* background-repeat: repeat-x !important; */
+}
+
+/* Link */
+a {
+    color: #8EC57D;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* Menu + Submenu */
+#navigation_bar > ul > li > a {
+    color: #8EC57D;
+    background-color: none;
+}
+
+#navigation_bar > ul > li > a:hover, 
+#navigation_bar > ul > li.current-menu-ancestor > a {
+    color: #FFFFFF !important;
+    background-color: #8EC57D;
+}
+
+/* Submenu */
+#navigation ul li a {
+    color: #ffffff;
+    background-color: #8EC57D;
+}
+
+#navigation ul li a:hover {
+    color: #000000;
+    background-color: #8EC57D;
+}
+
+#navigation_bar li.current-menu-ancestor, 
+#navigation_bar li.current-menu-ancestor a {
+    color: #FFFFFF !important;
+}
+
+/* Cor Destaque */
+.icon-holder, .head_text .arrow, .box:hover > .image-border-bottom,
+.flex-caption .desc-background, .flex-direction-nav li, .flex-direction-nav li a,
+.flex-control-nav li a, body .search-bar form input.searchsubmit, .paging li a:hover,
+.paging li a:hover, .paging li.active a, .post-navigations a, a.banner_button, a.banner_button:hover,
+.social_tip, .icon-overlay .icon, .blog_list .date, .rt-toggle ol li .toggle-number, .mobile-date,
+.theme-default .nivo-directionNav a, .theme-default .nivo-caption .desc-background, .theme-default .nivo-controlNav a {
+    background-color: #8EC57D !important;
+}
+
+/* Ajustes */
+select {
+    height:auto !important;
+}
+.modulo input,select,textarea {
+    /*width:auto !important;*/
+    margin:2px;
+}
+.modulo table {
+    border-spacing:0;
+    /*width:98%;*/
+    margin:auto;
+    border:inherit;
+}
+.modulo td {
+    padding:inherit;
+    border:none;
+    /*text-align:inherit;*/
+    margin:0 !important;
+}
+.modulo {
+    overflow:visible !important;
+}
+#menuAdmin ul li {
+    margin:0 !important;
+    z-index:9999;
+}
+#menuAdmin ul li a {
+    color:white !important;
+}
+input[type=image] {
+    background: transparent;
+    margin: 0;
+}
+input, label {
+    display: inline !important;
+    
+}
+
+/* Botão Help */
+#botao-help {
+    font-size:15px !important;
+    font-family:Arial;
+    font-weight:bolder;
+    display:block;
+    margin-top:10px;
+    text-align:center;
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    padding:3px;
+    cursor:pointer !important;
+    background:#e9e9e9;
+    border:#ccc 1px solid; color:#000;
+    padding:0px 10px;
+    box-shadow:0px 0px 2px #ddd;
+    text-shadow:0px 0px 2px #bbb;
+    color:#000099 !important;
+    line-height:200%;
+    margin: 0;
+}
+
+#botao-help:hover {
+    background-color:#eaeaea;
+    box-shadow:0px 0px 5px #ddd;
+    color:#000000 !important;
+}
+
+.logo-background {
+    padding: 0 30px !important;
+}
+
+.logo-holder {
+    border-color: #8EC57D !important;
+}
+
+/*
+#navigation_bar > ul > a {
+    background-color: none !important;
+}
+
+#navigation_bar > ul > a:hover {
+    background-color: none !important;
+}
+*/
+</style>
+</head>
+
+<!-- body starts here -->
+<body class="home responsive">
+
+
+<!--[if lte IE 7]>
+    <script type="text/javascript" src="http://www.webcartorios.com.br/widgets/navegador/verifica.js"></script>
+<![endif]-->
+<style>
+    .noscript { border:1px solid #ddd; border-width:0 0 1px; background:#ffff90; font-size:12px; line-height:1.25; text-align:center; color:#2f2f2f; }
+    .noscript .noscript-inner { width:750px; margin:0 auto; padding:12px 0 12px; background:url(https://www.404.com/) 20px 50% no-repeat; }
+    .noscript p { margin:0; }
+</style>
+
+
+<!-- background wrapper -->
+<div id="container">
+
+    <div class="transparent-line"></div><!-- transparent line -->
+    
+    <!-- content wrapper -->
+    <div class="content-wrapper">       
+
+        <!-- header -->
+
+        <div id="header" class="clearfix">
+
+            <header>            
+
+                <!-- logo -->
+                <div id="logo" class="clearfix">
+                    <div class="shadow-left"></div><!-- shadow left-->
+                    <div class="logo-holder"><!-- logo holder-->
+                        <div class="transparent-line logo"></div><!-- transparent line -->
+                        <div class="logo-background"><!-- logo background-->
+                            <a href="index.html" title="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP"><img src="layout_v2/images/logo06f3.png?1566453297" alt="1º Tabelionato de Notas e de Protesto de Letras e Títulos de Matão/SP" class="png" /></a>
+                            <!--MUDAR LOGO-->
+                        </div>
+                    </div>
+                    <div class="shadow-right"></div><!-- shadow right-->
+                </div>
+                <!-- / end div #logo -->    
+
+                <!-- navigation --> 
+                <nav>
+
+                <div id="navigation_bar" class="navigation"> 
+
+
+
+                    <!-- Standart Menu --> 
+
+                    <ul id="navigation" class="menu"> 
+
+                        <li class="current-menu-ancestor first"><a href="index.html">Início</a></li><!-- active menu item -->
+                          <li><a href="#">Serviços</a>
+                                  <ul class="sub-menu"><li><a href="#">Notas</a>
+                                                   <ul class="sub-menu"><li><a href="abertura_firma.html">Abertura de Firmas</a></li><li><a href="atas.html">Atas Notariais</a></li><li><a href="autenticacao.html">Autenticação de Cópias</a></li><li><a href="sentenca.html">Carta de Sentença</a></li><li><a href="certidoes.html">Certidões</a></li><li><a href="uniaoestavel.html">Declaração de União Estável</a></li><li><a href="declaracoes.html">Declarações</a></li><li><a href="emancipacao.html">Emancipação</a></li><li><a href="escrituras.html">Escrituras</a></li><li><a href="inventarios_separacoes_divorcios.html">Inventários, Separações e Divórcios</a></li><li><a href="antenupcial.html">Pacto Antenupcial</a></li><li><a href="procuracoes.html">Procurações</a></li><li><a href="reconhecimento_filho.html">Reconhecimento de Filho</a></li><li><a href="reconhecimento_firma.html">Reconhecimento de Firma</a></li><li><a href="testamento.html">Testamento</a></li><li><a href="duvidas_notas.html">Modelos/Tire suas dúvidas</a></li></ul></li><li><a href="#">Protesto</a>
+                                                   <ul class="sub-menu"><li><a href="cancelamento.html">Cancelamento de Protesto</a></li><li><a href="formulario_protesto.html">Formulário de Protesto</a></li><li><a href="formulario_cancelamento.html">Modelo de Formulário para Cancelamento de Protesto</a></li><li><a href="certidao_protesto.html">Pedido de Certidão</a></li><li><a href="protesto_titulo.html">Protesto de Títulos</a></li><li><a href="duvidas_protesto.html">Modelos/Tire suas dúvidas</a></li></ul></li><li><a href="noticias.html">Notícias</a></li><li><a href="tabelas_custas.html">Tabelas de Custas e Emolumentos</a></li></ul></li>                       <li><a href="#">O Cartório</a>
+                              <ul>
+                               <li><a href="cartorio.html">Sobre o Cartório</a></li><li><a href="cidade.html">Nossa Cidade</a></li><li><a href="localizacao.html">Mapa de localização</a></li>                              </ul>
+                                </section>
+                        </li>
+                        <li><a href="duvidas.html">Dúvidas?</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+
+
+                    </ul> 
+
+                    <!-- / Standart Menu --> 
+
+
+
+
+
+                    <!-- Mobile Menu -->  
+
+                    <select id="mobile_navigation" class="menu dropdown-menu"> 
+
+                        <option value="#">&#8211; Menu &#8211;</option>
+                        <option value="index.html">Início</option>
+                        
+                          <option value="#"> - Notas</option><option value="abertura_firma.html"> - - Abertura de Firmas</option><option value="atas.html"> - - Atas Notariais</option><option value="autenticacao.html"> - - Autenticação de Cópias</option><option value="sentenca.html"> - - Carta de Sentença</option><option value="certidoes.html"> - - Certidões</option><option value="uniaoestavel.html"> - - Declaração de União Estável</option><option value="declaracoes.html"> - - Declarações</option><option value="emancipacao.html"> - - Emancipação</option><option value="escrituras.html"> - - Escrituras</option><option value="inventarios_separacoes_divorcios.html"> - - Inventários, Separações e Divórcios</option><option value="antenupcial.html"> - - Pacto Antenupcial</option><option value="procuracoes.html"> - - Procurações</option><option value="reconhecimento_filho.html"> - - Reconhecimento de Filho</option><option value="reconhecimento_firma.html"> - - Reconhecimento de Firma</option><option value="testamento.html"> - - Testamento</option><option value="duvidas_notas.html"> - - Modelos/Tire suas dúvidas</option><option value="#"> - Protesto</option><option value="cancelamento.html"> - - Cancelamento de Protesto</option><option value="formulario_protesto.html"> - - Formulário de Protesto</option><option value="formulario_cancelamento.html"> - - Modelo de Formulário para Cancelamento de Protesto</option><option value="certidao_protesto.html"> - - Pedido de Certidão</option><option value="protesto_titulo.html"> - - Protesto de Títulos</option><option value="duvidas_protesto.html"> - - Modelos/Tire suas dúvidas</option><option value="#"> - Serviços</option><option value="noticias.html"> - - Notícias</option><option value="tabelas_custas.html"> - - Tabelas de Custas e Emolumentos</option>                        <option value="#"> - O Cartório</option>
+                        
+                       <option value="cartorio.html"> - - Sobre o Cartório</option><option value="cidade.html"> - - Nossa Cidade</option><option value="localizacao.html"> - - Mapa de localização</option>                        
+                        <option value="links.html"> - Links</option>
+                        <option value="contato.html"> - Contato</option>
+                    </select> 
+
+                    <!-- / Mobile Menu -->     
+
+
+
+                </div>
+
+                </nav>
+
+                <!-- / navigation  -->
+
+                
+
+            </header>
+
+        </div><!-- end div #header -->
+
+        
+
+    </div><!-- / end div content-wrapper -->
+
+    
+
+    <!-- main container -->
+
+    <div id="main" role="main" class="clearfix">
+
+    
+
+        <!-- fullwidth -->
+
+        <div class="sub_page fullwidth">
+
+        
+
+        	<!-- content holder -->
+
+        	<div class="content fullwidth clearfix">
+
+            
+            
+            	<div class="space margin-b30"></div>
+	  <div class="box one box-shadow">
+		
+		<!-- page title -->
+		<div class="head_text nomargin">
+			<div class="arrow"></div><!-- arrow -->
+			<h2>Procurações</h2>	</div>
+		<!-- /page title -->
+	</div><div class="space margin-b30"></div><div class="modulo box one box-shadow"><table border="0" align="center" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><div style="padding: 14px;"><p><span> </span></p>
+<ul>
+<li><span style="font-size: small;"><a href="index0456.html?pG=X19wYWdpbmFz&amp;idPagina=14" target="_blank"><strong>Procura&ccedil;&atilde;o</strong></a></span></li>
+<span style="font-size: small;"> </span>
+</ul>
+<p><span style="font-size: small;"> </span></p>
+<ul>
+<span style="font-size: small;"> </span>
+<li><span style="font-size: small;"><a href="index6480.html?pG=X19wYWdpbmFz&amp;idPagina=15" target="_blank"><strong>Revoga&ccedil;&atilde;o de Procura&ccedil;&atilde;o</strong></a></span><br /></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div><div style="background: #f1f1f1; margin: 3px; padding: 10px; border: 1px solid #dddddd; color:"><font class="titulo_item"><div style="float: left"><a href="index.html">Voltar</a></div><BR></font></div></td></tr></table></div><!--/ .modulo-->
+ 
+
+                <!-- space -->
+
+                <div class="space margin-b30"></div>
+
+
+
+
+
+    
+
+        	</div><!-- / end div .content holder -->
+
+        </div><!-- / end div .fullwidth -->
+
+    
+
+    </div><!-- / end div #main -->
+
+
+	
+
+    <!-- footer -->
+
+    <div class="transparent-line footer"></div><!-- transparent line -->
+
+    <div id="footer" class="box-shadow clearfix"><footer>
+
+     
+
+        <!-- footer info -->
+
+        <div class="footer_info">       
+
+                
+
+            <!-- left side -->
+
+            <div class="part1">
+
+
+
+                <!-- footer nav -->
+
+                
+
+
+
+                <!-- copyright text -->
+
+                <div class="copyright">
+
+                    &copy; 2020 Todos os direitos reservados
+
+                </div><!-- / end div .copyright -->             
+
+                
+
+            </div><!-- / end div .part1 -->
+
+                        
+        </div><!-- / end div .footer_info -->
+
+            
+
+    </footer></div><!--! end of div #footer --> 
+
+    <!-- / footer -->
+
+
+
+</div><!-- end div #container -->
+
+
+
+<!-- footer scripts -->
+
+<script type='text/javascript' src='layout_v2/js/script06f3.js?1566453297'></script> <!-- various scripts -->
+
+<!-- / footer scripts -->
+
+<script type="text/javascript">
+$ = jQuery;
+
+// Inicia as Máscaras
+$(function() {
+    $.mask.masks.letras = {mask: 'i', type:'repeat'};
+    $.mask.masks.numeros = {mask: '9', type:'repeat'};
+    $('input:text').setMask();
+    $('.data').datepicker();
+});
+</script>
+</body>
+
+
+</html>

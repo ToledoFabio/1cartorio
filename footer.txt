@@ -1,0 +1,74 @@
+<!-- footer -->
+
+    <div class="transparent-line footer"></div><!-- transparent line -->
+
+    <div id="footer" class="box-shadow clearfix"><footer>
+
+     
+
+        <!-- footer info -->
+
+        <div class="footer_info">       
+
+                
+
+            <!-- left side -->
+
+            <div class="part1">
+
+
+
+                <!-- footer nav -->
+
+                
+
+
+
+                <!-- copyright text -->
+
+                <div class="copyright">
+
+                    &copy; 2020 Todos os direitos reservados
+
+                </div><!-- / end div .copyright -->             
+
+                
+
+            </div><!-- / end div .part1 -->
+
+                        
+        </div><!-- / end div .footer_info -->
+
+            
+
+    </footer></div><!--! end of div #footer --> 
+
+    <!-- / footer -->
+
+
+
+</div><!-- end div #container -->
+
+
+
+<!-- footer scripts -->
+
+<script type='text/javascript' src='layout_v2/js/script06f3.js?1566453297'></script> <!-- various scripts -->
+
+<!-- / footer scripts -->
+
+<script type="text/javascript">
+$ = jQuery;
+
+// Inicia as Máscaras
+$(function() {
+    $.mask.masks.letras = {mask: 'i', type:'repeat'};
+    $.mask.masks.numeros = {mask: '9', type:'repeat'};
+    $('input:text').setMask();
+    $('.data').datepicker();
+});
+</script>
+</body>
+
+
+</html>
